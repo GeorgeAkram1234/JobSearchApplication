@@ -10,9 +10,6 @@ const port = process.env.PORT
 
 bootstrap(app, express)
 
-app.get('/', (req , res) => {
-    return res.json({ msg: "hello world" })
-})
 
 
 const httpServer = app.listen(port, () => console.log(`Example app listening on port ${port}!`))
